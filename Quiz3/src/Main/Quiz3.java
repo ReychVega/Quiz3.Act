@@ -5,6 +5,7 @@
  */
 package Main;
 
+import domain.CircularLinkedList;
 import domain.Course;
 import domain.DoublyLinkedList;
 import domain.SinglyLinkedList;
@@ -36,7 +37,7 @@ public class Quiz3 {
         d.add(new Course("40","Informática.",4));
         d.add(new Course("80","Inglés.",4));
         
-        
+        CircularLinkedList c;
        /*
 c. CircularLinkedList c, con 5 objetos tipo Employee (lab-5)
 d. CircularDoublyLinkedList d, con 5 objetos tipo JobPosition (lab-5)*/
