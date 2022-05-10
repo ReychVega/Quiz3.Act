@@ -11,6 +11,8 @@ import domain.Course;
 import domain.DoublyLinkedList;
 import domain.Employee;
 import domain.JobPosition;
+import domain.ListException;
+import domain.Node;
 import domain.SinglyLinkedList;
 import domain.Student;
 import java.util.Date;
@@ -24,7 +26,9 @@ public class Quiz3 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ListException {
+        
+        
         
         SinglyLinkedList s=new SinglyLinkedList();
         s.add(new Student("1", "Karla", 20, "San José"));
@@ -56,7 +60,16 @@ public class Quiz3 {
          b.add(new JobPosition("Abogado.", 40));
          
          //coment
-
+    Node reference=new Node(new Student("97", "Karla", 20, "San José"));
+    
+        Node aux;
+         reference.next=(Node)s.getFirst();
+         aux=reference.next;
+        aux.next=(Node)s.getLast();
+     
+        }
+    
+    
     }
     
 }
