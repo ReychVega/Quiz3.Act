@@ -55,7 +55,7 @@ public class Quiz3 {
          b.add(new JobPosition("Profesor.", 48));
          b.add(new JobPosition("Abogado.", 40));
          
-         
+         //coment
 
     }
     
