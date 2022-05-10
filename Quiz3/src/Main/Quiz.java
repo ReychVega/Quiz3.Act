@@ -64,24 +64,16 @@ public class Quiz {
     
             DoublyLinkedList list =new DoublyLinkedList();
 
-    
-        Node aux;// nodo auxiliar para guardar los .next
-        reference.next = (Node) a.getFirst();//a first
-        aux = reference.next;
-        aux.next = (Node) a.getLast();//a last
-        aux = aux.next;
-        aux.next = (Node) b.getFirst();//b first
-        aux = aux.next;
-        aux.next = (Node) b.getLast();//b last
-        aux = aux.next;
-        aux.next = (Node) c.getFirst();//c first
-        aux = aux.next;
-        aux.next = (Node) c.getLast();//b last
-        aux = aux.next;
-        aux.next = (Node) d.getFirst();//d first
-       
-    /**
-     *
-     */
-        
+            list.add(reference.data);
+            list.add(a.getFirst());
+            list.add(a.getLast());
+            list.add(b.getFirst());
+            list.add(b.getLast());
+            list.add(c.getFirst());
+            list.add(c.getLast());
+            list.add(d.getFirst());
+
+            System.out.println(list.size());
+//       
+   
     }}
