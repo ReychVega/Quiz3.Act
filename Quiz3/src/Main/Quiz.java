@@ -62,6 +62,9 @@ public class Quiz {
          //coment
     Node reference=new Node(new Student("97", "Karla", 20, "San José"));
     
+            DoublyLinkedList list =new DoublyLinkedList();
+
+    
         Node aux;// nodo auxiliar para guardar los .next
         reference.next = (Node) a.getFirst();//a first
         aux = reference.next;
@@ -80,6 +83,5 @@ public class Quiz {
     /**
      *
      */
-     reference.display(reference);
         
     }}
