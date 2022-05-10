@@ -50,7 +50,6 @@ public class Student implements Person {
         return address;
     }
 
-    @Override
     public boolean equals(SinglyLinkedList list,int index,Student other) {
             if (list.isEmpty()) {
                 list.add(other);//añade el elemento
@@ -83,6 +82,11 @@ public class Student implements Person {
     public String toString(){
         return "Student {" + "id=" + getId() + ", name=" + getName() + ", age=" + getAge() +", study hours= "
                 + studyHours()+ ", address="+getAddress();
+    }
+
+    @Override
+    public boolean equals(Person other) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
