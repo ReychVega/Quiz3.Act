@@ -61,19 +61,52 @@ public class Quiz {
          
          //coment
     Node reference=new Node(new Student("97", "Karla", 20, "San José"));
-    
-            DoublyLinkedList list =new DoublyLinkedList();
-
-            list.add(reference.data);
-            list.add(a.getFirst());
-            list.add(a.getLast());
-            list.add(b.getFirst());
-            list.add(b.getLast());
-            list.add(c.getFirst());
-            list.add(c.getLast());
-            list.add(d.getFirst());
-
-            System.out.println(list.size());
-//       
+     //punto 4
+            Node aux;
+            reference.next=new Node(a.getFirst());
+            aux=reference.next;
+            
+            aux.next=new Node(a.getLast());
+            aux=aux.next;
+            
+            aux.next=new Node (b.getFirst());
+            aux=aux.next;
+            
+            aux.next=new Node (b.getLast());
+            aux=aux.next;
+            
+            aux.next=new Node (c.getFirst());
+            aux=aux.next;
+            
+            aux.next=new Node (c.getLast());
+            aux=aux.next;
+            
+            aux.next=new Node (d.getFirst());
+            aux=aux.next;
+            
+            reference.display(reference);//imprimi la lista de nodos del punto 4.
+            
+            System.out.println("******************************************************");
+            //punto 5. Imprime todas las listas
+            Node reference2=new Node(new Student("97", "Karla", 20, "San José"));
+           
+            reference2.next=new Node(a);
+            aux=reference2.next;
+            
+            aux.next=new Node(b);
+            aux=aux.next;
+            
+            aux.next=new Node (c);
+            aux=aux.next;
+            
+            aux.next=new Node (d);
+            aux=aux.next;
+            
+            reference2.display(reference2);
+            System.out.println("*************************************");
+        
+            reference2.inverse(reference2);
+            
+            
    
     }}

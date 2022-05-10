@@ -189,17 +189,7 @@ public class DoublyLinkedList implements List {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public void display(Node reference) throws ListException{
-         if (!isEmpty()) {
-             Node aux=this.first;
-             for (int i = 1; i <= size(); i++) {
-                 System.out.println(i+" "+getNode(i).data);
-             }
-             
-             
-         }
-        
-        }
+   
     @Override
     public Node getNode(int index) throws ListException {
         if(isEmpty())
@@ -222,7 +212,7 @@ public class DoublyLinkedList implements List {
         String result = "Doubly Linked List Content\n";
         Node aux = first;
         while(aux!=null){
-           result+=aux.data+" ";
+           result+=aux.data+"\n";
            aux = aux.next;
         }
         return result;
