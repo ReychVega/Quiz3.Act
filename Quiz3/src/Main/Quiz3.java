@@ -5,11 +5,15 @@
  */
 package Main;
 
+import domain.CircularDoublyLinkedList;
 import domain.CircularLinkedList;
 import domain.Course;
 import domain.DoublyLinkedList;
+import domain.Employee;
+import domain.JobPosition;
 import domain.SinglyLinkedList;
 import domain.Student;
+import java.util.Date;
 
 /**
  *
@@ -37,11 +41,22 @@ public class Quiz3 {
         d.add(new Course("40","Informática.",4));
         d.add(new Course("80","Inglés.",4));
         
-        CircularLinkedList c;
-       /*
-c. CircularLinkedList c, con 5 objetos tipo Employee (lab-5)
-d. CircularDoublyLinkedList d, con 5 objetos tipo JobPosition (lab-5)*/
-        
+        CircularLinkedList c=new CircularLinkedList();
+        c.add(new Employee(178118522,"Castillo","José","Abogado.",new Date(84,8,3)));
+        c.add(new Employee(116134986,"Alvarado","José","Gerente.",new Date(95,8,3)));
+        c.add(new Employee(194685164,"Molina","José","Profesor.",new Date(80,8,3)));
+        c.add(new Employee(802080018,"Solano","Sebas","Desarrollador Web.",new Date(84,8,3)));
+        c.add(new Employee(117190806,"Rojas","Miguel","Cajero.",new Date(90,8,3)));
+
+         CircularDoublyLinkedList b= new CircularDoublyLinkedList ();
+         b.add(new JobPosition("Gerente.", 150));
+         b.add(new JobPosition("Cajero.", 100));
+         b.add(new JobPosition("Desarrollador Web.", 100));
+         b.add(new JobPosition("Profesor.", 48));
+         b.add(new JobPosition("Abogado.", 40));
+         
+         
+
     }
     
 }
